@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_process">
+
+    <fragment
+        android:id="@+id/navigation_photo"
+        android:name="ru.yatsevyukcompany.testrecycle.ui.photo.PhotoFragment"
+        android:label="@string/tittle_photo"
+        tools:layout="@layout/fragment_photo" />
+
+
+    <fragment
+        android:id="@+id/navigation_process"
+        android:name="ru.yatsevyukcompany.testrecycle.ui.process.ProcessFragment"
+        android:label="Процесс"
+        tools:layout="@layout/fragment_process"/>
+    <fragment
+        android:id="@+id/navigation_money"
+        android:name="ru.yatsevyukcompany.testrecycle.ui.money.MoneyFragment"
+        android:label="@string/title_money"
+        tools:layout="@layout/fragment_money"/>
+    <fragment
+        android:id="@+id/navigation_tasks"
+        android:name="ru.yatsevyukcompany.testrecycle.ui.tasks.TasksFragment"
+        android:label="@string/tittle_tasks"
+        tools:layout="@layout/fragment_tasks" />
+</navigation>
